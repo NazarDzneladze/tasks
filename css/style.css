@@ -1,0 +1,140 @@
+/* montserrat-regular - latin */
+@font-face {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	src: local(''),
+		 url('../fonts/montserrat-v25-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+		 url('../fonts/montserrat-v25-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-700 - latin */
+  @font-face {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	src: local(''),
+		 url('../fonts/montserrat-v25-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+		 url('../fonts/montserrat-v25-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+
+
+body{
+	font-family: 'Montserrat';
+	font-style: normal;
+	background-color: aquamarine;
+  }
+
+.wrapper{
+	width: 300px;
+	margin: 0 auto;
+	background: #FBF7F6;
+	border-radius: 15px;	
+  }
+
+form{
+	width: 100%;
+	padding-top: 30px;
+  }
+
+fieldset legend{
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 24px;
+	letter-spacing: 0.04em;
+	color: #371030;
+	margin-bottom: 15px;
+	padding-left: 22px;
+	
+}
+
+.input-label label{
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 30px;
+	letter-spacing: 0.04em;
+	color: #371030;
+}
+
+.input-label{
+	padding-left: 16px;
+}
+
+.input-label{
+	width: 260px;
+}
+
+.input-label input{
+	margin-right: 10px;
+}
+
+
+fieldset::after{
+
+	content: "";
+	display: block;
+	width: 280px;
+	height: 1px;
+	background-color: #EFEFEF;
+	margin:15px 10px;
+}
+
+.count{
+	font-size: 12px;
+	color: gray;
+}
+
+fieldset:nth-child(4) legend:after{
+	content: url(../img/arrow.svg);
+	margin-left:103px;
+}
+
+.tags-search{
+	width: 256px;
+	margin: 0 auto;
+}
+
+h3{
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 24px;
+	letter-spacing: 0.04em;
+	color: #371030;
+	margin-bottom: 20px;
+}
+
+h3::after{
+	content: url(../img/arrow.svg);
+	margin-left: 76px;
+}
+
+.tags-search div div{
+	border: 2px solid #FFB0BA;
+	border-radius: 100px;
+	text-align: center;
+	margin: 0px 15px 10px 0;
+	width: 80px;
+}
+
+.flex{
+	display: flex;
+	flex-wrap: wrap;
+ 	flex-direction: row;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
