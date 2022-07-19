@@ -70,6 +70,8 @@ html{
 }
 
 
+
+
 /* header style start */
 
 .header{
@@ -127,8 +129,17 @@ html{
 	background-size: cover;
 }
 
-.intro__logo2{
+
+.intro__content{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
 	padding-top: 208px;
+}
+
+.intro__logo2{
+	/* padding-top: 208px; */
 	margin-bottom: 51px;
 }
 
@@ -147,12 +158,253 @@ html{
 	color: white;
 }
 
-.intro__title::after{
+.intro__title:after{
+	margin-top: 55px;
+	margin-bottom: 42px;
+	content: "";
 	display: block;
 	width: 170px;
 	height: 1px;
 	background-color: #FFFFFF;
 }
 
+.intro__sub-title{
+	width: 270px;
+	margin-bottom: 42px;
+}
+
+.intro__sub-title-style{
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+	color: #FFFFFF;
+}
+
+.intro__button{
+	min-width: 270px;
+	min-height: 58px;
+	background-color: transparent;
+	border: 2px solid #FFFFFF;
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 25px;
+	text-transform: capitalize;
+	color: #FFFFFF;
+}
+
+
+
+.intro__form{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	width: 470px;
+	float: right;
+	/* padding-top: 208px; */
+	background: #FFFFFF;
+	border-radius: 10px;
+	align-items: center;
+}
+
+.intro__form-h4-box{
+	width: 367px;
+	height: 90px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 45px;
+}
+
+.intro-form__h4-style{
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 33px;
+	text-transform: uppercase;
+	color: #333333;
+}
+
+.intro-form__h4-style span{
+	color: #EC7979;
+}
+
+.intro__form-input::placeholder{
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 19px;
+	color: #BDBDBD;
+}
+
+.intro__form-input{
+	padding-bottom: 16px;
+	width: 370px;
+	margin-bottom: 33px;
+}
+
+.intro__form input:nth-of-type(3){
+	margin-bottom: 75px;
+}
+
+.intro__form-bottun{
+	width: 100%;
+	border: none;
+	background-color: #EC7979;
+	border-radius: 0px 0px 10px 10px;
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 15px;
+	line-height: 20px;
+	color: #FFFFFF;
+	height: 60px;
+}
 
 /* intro style end */
+
+
+/* contact style start */
+
+.contact{
+	background-color: antiquewhite;
+	padding-top: 50px;
+}
+
+
+.contact__text-h2{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 150px;
+	margin-bottom: 40px;
+}
+
+/* .contact__text-h2:after{
+	display: block;
+	content: "";
+	width: 170px;
+	height: 1px;
+	border: 1px solid #EC7979
+} */
+
+
+.contact__text-h2-style{
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 42px;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.contact__text-h5{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin-bottom: 89px;
+}
+
+.contact__text-h5-style{
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+	color: #86878B;
+}
+
+.contact__form{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 50px;
+	height: 211px;
+}
+
+.contact__form-inputs{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 570px;
+}
+
+.contact__form-item{
+	width: 100%;
+	padding-bottom: 16px;
+}
+
+.contact__form-item::placeholder{
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 19px;
+	color: #BDBDBD;
+}
+
+.form__textarea-item::placeholder{
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 19px;
+	color: #BDBDBD;
+}
+
+.form__textarea-item{
+	height: 100%;
+}
+
+.contact__form-textarea{
+	width: 570px;
+}
+
+input {
+	border: none;
+	background-color: transparent;
+	border-bottom: 1px solid #BDBDBD;
+}
+
+textarea{
+	border:none;
+	background-color: transparent;
+	border-bottom: 1px solid #BDBDBD;
+	width: 100%;
+	resize: none;
+}
+
+.contact__button-box{
+	text-align: center;
+}
+
+.contact__button{
+	min-width: 370px;
+	height: 58px;
+	background-color: #EC7979;
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 25px;
+	text-transform: capitalize;
+	color: white;
+	border: none;
+}
+
+/* contact style end */
