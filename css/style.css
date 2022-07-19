@@ -69,13 +69,12 @@ fieldset legend{
 	padding-left: 16px;
 }
 
-.input-label{
-	width: 260px;
-}
+
 
 .input-label input{
 	margin-right: 10px;
 }
+
 
 
 fieldset::after{
